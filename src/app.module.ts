@@ -1,9 +1,10 @@
+import { CoreModule } from '@core/core';
+import { JwtMiddleware } from '@core/core/middleware/jwt/jwt.middleware';
+import type * as common from '@nestjs/common';
 import { Module } from '@nestjs/common';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CoreModule } from '@core/core';
-import type * as common from '@nestjs/common';
-import { JwtMiddleware } from '@core/core/middleware/jwt/jwt.middleware';
 
 @Module({
   imports: [CoreModule],
