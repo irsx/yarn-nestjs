@@ -24,7 +24,7 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       subscribers: [__dirname + '../../../../../**/*.subscriber{.ts,.js}'],
       migrations: [__dirname + '../../../../../db/migrations/*{.ts,.js}'],
       migrationsTableName: 'typeorm_migrations',
-      logging: process.env.ENV === 'local' ? ['query', 'error'] : false,
+      logging: process.env.ENV === 'local' ? ['query', 'error'] : ['error'],
       synchronize: false,
     };
   }

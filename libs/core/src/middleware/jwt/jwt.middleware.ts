@@ -6,9 +6,9 @@ import { Inject, Injectable, Logger } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
 import type { Request, Response } from 'express';
 import { custom, Issuer } from 'openid-client';
+import { ErrorContextNameEnum } from 'src/middleware/dto/common';
 
 import type { JwtPayload } from './dto/jwt-payload.dto';
-import { ErrorContextNameEnum } from 'src/middleware/dto/common';
 
 @Injectable()
 export class JwtMiddleware implements NestMiddleware {
