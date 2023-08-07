@@ -45,6 +45,19 @@ $ yarn start:dev
 $ yarn start:prod
 ```
 
+## migration
+
+```bash
+# generate migration
+$ yarn migration:generate ./db/migrations/name-of-migration
+
+# run migration
+$ yarn migration:run
+
+# rollback migration
+$ yarn migration:rollback
+```
+
 ## Test
 
 ```bash
